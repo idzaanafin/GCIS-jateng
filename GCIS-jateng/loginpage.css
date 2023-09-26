@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+ 
+header {
+  padding: 0.3rem;
+  background-color: #800000;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.container .title {
+  flex: 1;
+  
+}
+
+.container .title h1 {
+  font-size: 2.5rem;
+  text-shadow: 0.531rem 0.531rem 0.25rem rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+footer {
+  margin-top: -5.6rem;
+  padding: 0.1rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #800000;
+  color: white;
+}
+
+  /* login page */
+  .login {
+    position: relative;
+    top: -5rem;
+    left: 1.563rem;
+    width: 28.125rem;
+    height: 14.375rem;
+    margin: 3.125rem auto;
+    background-color: white;
+    border: 1.5rem solid maroon;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    padding: 1.25rem;
+    box-shadow: 0.531rem 0.531rem 0.25rem rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .login h2{
+    margin-top: -0.625rem;
+    text-decoration-line: underline;
+    margin-left: 12.188rem;
+  }
+
+  .nama h2{
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+    background-color: #800000;
+    color: #fff;
+    width: 9rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 3.125rem 3.125rem 3.125rem 3.125rem;
+    border: 0.938rem solid #800000
+  }
+
+
+  
+  
+  /* .underline {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+  } */
+  
+  .input-container {
+    margin-bottom: 0.938rem;
+    font-weight: bold;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 0.313rem;
+    margin-top: -0.625rem;
+  }
+  
+  .icon-container {
+    width: 1.25rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .icon-container img {
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 23.125rem;
+    padding: 0.625rem;
+    border: 0.188rem solid #d9d9d9;
+    background-color: #d9d9d9;
+    border-radius: 0.313rem;
+    padding-left: 2.5rem; /* Add padding to accommodate the icons */
+  }
+  
+  .login-button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.938rem;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: #500000;
+  } 
+
+  @media only screen and (max-width: 480px) {\
+    body {
+      max-width: 600px;
+    }
+  
+    header {
+      padding: 0.5rem;
+      margin-bottom: 2rem;
+      background-color: #800000;
+      color: white;
+    }
+  
+    header .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    } 
+  
+    .container .title h1 {
+      font-size: 1rem;
+      text-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
+      transition: color 0.3s ease-in-out;
+      margin-left: -1rem;
+    }
+  
+    .logo img {
+      width: 4.5rem;
+      margin-right: 1rem;
+    }
+
+    footer {
+    padding: 1.5rem;
+    background-color: #800000;
+    color: white;
+    top: calc(43.75rem + 12.5rem); /* Adjust the value here */
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-top: -12.5rem;
+    font-size: 1rem;
+  }
+  
+    
+    .nama h2{
+      margin-top: 3.125rem;
+      margin-left: -0.625rem;
+      background-color: #800000;
+      color: #fff;
+      width: 6.25rem;
+      font-size: 1.25rem;
+      text-align: center;
+      border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+      border: 0.625rem solid #800000
+
+    }
+
+    .login {
+      position: relative;
+      top: -0.313rem;
+      left: -0.313rem;
+      width: 12.5rem;
+      height: 18.75rem;
+      margin: 3.125rem auto;
+      background-color: white;
+      border: 1.875rem solid maroon;
+      border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+      padding: 1.25rem;
+      box-shadow: 0.531rem 0.531rem 0.25rem rgba(0, 0, 0, 0.5);
+      transition: color 0.3s ease-in-out;
+
+    }
+    .login h2{
+      margin-top: -0.938rem;
+      text-decoration-line: underline;
+      margin-left: 5rem;
+      font-size: 1.25rem;
+    }
+    .input-container {
+      margin-bottom: 1.875rem;
+      font-weight: bold;
+    }
+    
+    .input-container label {
+      display: block;
+      margin-bottom: 1.563rem;
+    }
+    .icon-container {
+      width: 1.25rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .icon-container img {
+      width: 80%;
+    }
+    input[type="text"],
+    input[type="password"] {
+    width: 9.375rem;
+    padding: 0.313rem;
+    border: 0.188rem solid #d9d9d9;
+    background-color: #d9d9d9;
+    border-radius: 0.313rem;
+    padding-left: 0.625rem; /* Add padding to accommodate the icons */
+  }
+  .login-button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.625rem;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: #500000;
+  } 
+
+
+  }

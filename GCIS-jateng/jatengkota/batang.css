@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #800000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  header .sub-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  header .sub-header .logo img {
+    width: 10rem;
+  }
+  
+  header .sub-header .title {
+    font-size: 1.5rem;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  header .home {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+  }
+  
+  header .home img {
+    display: block;
+    width: 3rem;
+    margin-right: 120px;
+  }
+  header .chart img{
+    display: block;
+    width: 3rem;
+    margin-right: 120px;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  main .map-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  main #map {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+  }
+  
+  main .chart-container .title  {
+    font-size: 25px;
+    width: 400px;
+    height: 35px;
+    right: 100px;
+    text-align: center;
+    margin-bottom: 15rem;
+    background-color: #800000;
+    color: white;
+    margin-top: -190px;
+    padding-top: 10px;
+  }
+  
+  main #myChart {
+    position: absolute;
+    top: 500px;
+    /* width:1000rem;  */
+    right: 75px; 
+    /* width: 1000px;
+    height: 600px; */
+  }
+  
+  .arrow img {
+    position: absolute;
+    top: 430px;
+    left: -60px;
+    width: 200px;
+    transform: rotate(180deg);
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: #800000;
+    color: white;
+  }
+  
+  footer h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  footer a:link {
+    color: #fff;
+  }
+  footer a:visited {
+    color: #fff;
+  }
+  footer a:hover {
+    color: #fff;
+  }
+  footer a:active {
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 480px) {\
+    header {
+      background-color: #800000;
+      color: white;
+      display: flex;
+      padding: 1rem 0.5rem;
+      flex-direction: column;
+    }
+  
+    header .sub-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    header .sub-header .logo img {
+      width: 3rem;
+    }
+  
+    header .sub-header .title {
+      font-size: 0.4rem;
+    }
+  
+    header .home {
+      display: flex;
+      justify-content: end;
+      margin-right: 1rem;
+    }
+  
+    header .home img {
+      width: 1rem;
+      margin-right: 30px;
+    }
+  
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    main .arrow img {
+      width: 5rem;
+    }
+  
+    main .map-container h2 {
+      font-size: 1.5rem;
+      margin-top: -20px;
+    }
+  
+    main #map {
+      width: 90%;
+      height: 300px;
+      margin: auto;
+    }
+  
+    main .chart-container .title  {
+      font-size: 1.5rem;
+      margin: 3rem 0;
+      padding: 8px; 5px;
+      background-color: #800000;
+      color: white; 
+      margin-left: 10px;
+      right: 30px;
+      text-align: center;
+      width: 300px;
+      border: 5px; solid:#800000;
+      margin-top: 30px;
+    }
+  
+    main #myChart {
+      top: 650px;
+      right: 50px;
+      width: 30%;
+      max-width: 390px;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #800000;
+      color: white;
+      top: calc(600px + 150px); /* Adjust the value here */
+      left: 0;
+      right: 0;
+      position: absolute;
+      margin-top: 100px;
+    }
+  
+    footer h3 {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  
+    .arrow img {
+      position: absolute;
+      top: 425px;
+      left: -20px;
+      height: 100px;
+      width: 600px;
+      /* transform: rotate(180deg); */
+      margin-top: 95px;
+    } 
+  }
